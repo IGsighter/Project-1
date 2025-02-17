@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Developer Portfolio</title>
+    <script src="https://kit.fontawesome.com/49830388ac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <nav>
+            <div class="left">
+                <p>CodeWithGaurav</p>
+            </div>
+            <div class="right">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porotolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="left-section">Hii, My name is <span class="purple">Gaurav</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="first-section-btn resume">Download Resume</button>
+                    <a href="https://github.com/IGsighter/GAURAV-GARG" target="_blank"><button class="first-section-btn github">Visit
+                            Github</button></a>
+                </div>
+            </div>
+            <div class="right-section">
+                <img class="first-section-img" src="images/home.png" alt="">
+            </div>
+        </section>
+
+        <div id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="left-about-col-1">
+                        <img src="images/second-section-img.jpg" alt="">
+                    </div>
+                    <div class="right-about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iste delectus maxime
+                            molestias rerum voluptatem fugit iusto. Quidem enim consequuntur, eos dicta amet cumque
+                            saepe magni sequi, soluta quibusdam odio, laudantium esse porro incidunt facilis quasi autem
+                            quod tempora iure maiores fugit assumenda? Repellendus sapiente quidem, perferendis
+                            reiciendis nobis iusto.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Freecodecamp</span><br>Responsive Web Design completed</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Freelancing</span><br>Social Media Management</li>
+                                <li><span>Video Editing</span><br>Edit Videos and shorts</li>
+                                <li><span>App Developmemt</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Cyber Security</span><br>Finding bugs and glitches</li>
+                                <li><span>2021</span><br>B-tech from JIT Jaipur Rajasthan</li>
+                                <li><span>App Developmemt</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services" class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Designing</h2>
+                        <p>Web designing is the process of creating visually appealing, functional, and user-friendly
+                            websites. It involves a combination of layout design, typography, color schemes, and
+                            interactive elements to enhance the overall user experience. A well-designed website
+                            balances aesthetics with usability, ensuring that visitors can navigate smoothly and find
+                            information easily. Web designers use tools like HTML, CSS, JavaScript, and design software
+                            to create responsive and engaging web pages. With the increasing importance of
+                            mobile-friendly and accessible designs, modern web design focuses on adaptability,
+                            performance, and a seamless user experience across all devices.</p>
+                        <a href="#">Lern more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UI/UX designing is the process of creating user-friendly, visually appealing, and intuitive
+                            digital experiences. UI (User Interface) design focuses on the look and feel of an
+                            application, including colors, typography, buttons, and overall layout to ensure aesthetic
+                            appeal. UX (User Experience) design, on the other hand, emphasizes usability, accessibility,
+                            and the overall journey of the user, ensuring seamless interaction with the product. A
+                            well-designed UI enhances engagement, while an effective UX ensures ease of use and
+                            satisfaction. Together, UI and UX design play a crucial role in building successful websites
+                            and applications that provide meaningful and enjoyable experiences for users.</p>
+                        <a href="#">Lern more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>App design is the process of creating visually appealing and user-friendly mobile or web
+                            applications. It involves both UI (User Interface) design, which focuses on the app’s look
+                            and feel, and UX (User Experience) design, which ensures smooth navigation and usability. A
+                            well-designed app is intuitive, responsive, and accessible, providing users with a seamless
+                            and engaging experience. Designers use tools like Figma, Adobe XD, and Sketch to create
+                            wireframes, prototypes, and final designs. With the growing demand for mobile applications,
+                            modern app design prioritizes simplicity, speed, and adaptability to deliver a high-quality
+                            experience across different devices and platforms.</p>
+                        <a href="#">Lern more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="sub-title">My Work</div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/portfolio-img1.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/portfolio-img2.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/portfolio-img3.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn" href="#">See more</a>
+            </div>
+        </div>
+        
+        <div id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> ggarg@1308@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 8529681236</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a class="btn btn2" href="" download>Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn btn2" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Gaurav. Made with <i class="fa-solid fa-heart"></i> by CodeWithGaurav</p>
+        </div>
+
+</body>
+
+</html>
