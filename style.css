@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -139,7 +139,7 @@ ul li a:hover::after {
 
 
 .about {
-    padding: 80px 70px;
+    padding: 80px 45px;
 }
 
 .row {
@@ -223,7 +223,7 @@ ul li a:hover::after {
 
 
 .services {
-    padding: 50px 70px;
+    padding: 50px 45px;
 }
 
 .services-list {
@@ -270,7 +270,7 @@ ul li a:hover::after {
 
 
 .portfolio {
-    padding: 50px 70px;
+    padding: 50px 45px;
 }
 
 .work-list {
@@ -354,7 +354,7 @@ ul li a:hover::after {
 }
 
 .contact {
-    padding: 50px 70px;
+    padding: 50px 45px;
 }
 
 .contact-left {
@@ -417,7 +417,7 @@ form textarea {
     border: 0;
     outline: none;
     background: #3f3a5b;
-    padding: 15px;
+    padding: 15px 10px;
     margin: 15px 0;
     font-size: 18px;
     border-radius: 6px;
@@ -431,20 +431,22 @@ form .btn2 {
     cursor: pointer;
 }
 
+
 .copyright {
     width: 100%;
-    text-align: center;
-    padding: 25px 0;
     background: #3f3a5b;
-    font-weight: 300;
     margin-top: 20px;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 300;
 }
+
 
 .copyright i {
     color: blueviolet;
 }
 
-#msg{
+#msg {
     color: blueviolet;
     margin-top: -40px;
     display: block;
@@ -456,22 +458,31 @@ form .btn2 {
 
 @media only screen and (max-width: 1181px) {
 
+    .first-section>div {
+        width: 80%;
+    }
     .right .fa-solid {
         display: block;
-    }
-    .first-section {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .first-section>div {
-        width: 70%;
+        position: absolute;
+        top: 25px;
+        right: 25px;
     }
 
     .right ul .fa-solid {
         display: block;
-        font-size: 25px;
+        right: 145px;
+        top: 25px;
     }
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .first-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
 
     nav .right ul {
         background: blueviolet;
@@ -479,19 +490,13 @@ form .btn2 {
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 100%;
         padding-top: 50px;
         flex-direction: column;
         z-index: 2;
         transition: right 0.5s;
     }
 
-    nav .right .fa-solid {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-    }
 
     nav ul li {
         display: block;
@@ -501,21 +506,28 @@ form .btn2 {
         margin: 15px;
     }
 
-    nav{
+    nav {
         display: flex;
         justify-content: flex-start;
     }
 
-    .left-about-col-1,.right-about-col-2{
-        flex-basis: 100%;
-    }
-    .left-about-col-1{
-        margin-bottom: 30px;
-    }
-    .contact-left,.contact-right{
+    .left-about-col-1,
+    .right-about-col-2 {
         flex-basis: 100%;
     }
 
+    .left-about-col-1 {
+        margin-bottom: 30px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
 }
 
 @media only screen and (max-width: 1180px) {
