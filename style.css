@@ -461,6 +461,7 @@ form .btn2 {
     .first-section>div {
         width: 80%;
     }
+
     .right .fa-solid {
         display: block;
         position: absolute;
@@ -473,7 +474,8 @@ form .btn2 {
         right: 145px;
         top: 25px;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
     }
 
@@ -519,7 +521,8 @@ form .btn2 {
     .left-about-col-1 {
         margin-bottom: 30px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
@@ -528,7 +531,8 @@ form .btn2 {
     .contact-right {
         flex-basis: 100%;
     }
-    ul li a:visited{
+
+    ul li a:visited {
         color: white;
     }
 }
